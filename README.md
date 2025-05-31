@@ -38,7 +38,7 @@ This project is a Sign Language Recognition system that detects American Sign La
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/sign-language-recognition.git
+   git clone https://github.com/dnahcirus/sign-with-yolo.git
    cd sign-language-recognition
    ```
 
