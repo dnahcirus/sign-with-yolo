@@ -1,0 +1,21 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Install system dependencies needed by OpenCV (like libGL)
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory
+WORKDIR /app
+
+# Copy and install Python dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the project
+COPY . .
+
+# Run all three scripts in order
+CMD ["sh", "-c", "python Preprocessing.py && python preprocessNew.py && python Model.py"]

@@ -1,0 +1,15 @@
+train: /Users/dnahcirus/Desktop/sign with yolo/YOLO_dataset/train
+val: /Users/dnahcirus/Desktop/sign with yolo/YOLO_dataset/test
+
+nc: 10
+
+names: ['A',
+   'B',
+   'C',
+   'D',
+   'E',
+   'F',
+   'G',
+   'H',
+   'I',
+   'J']
