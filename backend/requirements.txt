@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+numpy
+opencv-python
+torch
+scikit-learn
+tqdm
+Pillow
+ultralytics
+python-multipart

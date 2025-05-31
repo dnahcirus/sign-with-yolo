@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Gesture Upload</title>
+  <script defer src="/static/script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen flex items-center justify-center p-6">
+
+  <div class="w-full max-w-xl bg-white p-8 rounded-xl shadow-md">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Upload Sign Language Gestures</h2>
+
+    <form id="upload-form" class="space-y-6">
+      <div>
+        <label for="files" class="block text-gray-700 font-medium mb-2">Select Image(s)</label>
+        <input
+          type="file"
+          id="files"
+          name="files"
+          multiple
+          accept="image/*"
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <div class="text-center">
+        <button
+          type="submit"
+          class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+        >
+          Submit for Prediction
+        </button>
+      </div>
+    </form>
+
+    <div id="results" class="mt-8 space-y-6"></div>
+  </div>
+
+</body>
+</html>
