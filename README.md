@@ -19,7 +19,8 @@ This project is a Sign Language Recognition system that detects American Sign La
 ### 🧠 Model and Training
 
 * Model: YOLOv8
-* Dataset used: [American Sign Language (A–J) Dataset](https://www.kaggle.com/datasets/kapillondhe/american-sign-language)
+* Dataset taken: [American Sign Language (A–J) Dataset](https://www.kaggle.com/datasets/kapillondhe/american-sign-language)
+* Dataset used: (https://drive.google.com/file/d/1y_C7N6h4JVXebzxjt9PI1_yB4h-TaZFk/view?usp=drive_link)
 * Evaluation: `train_test_split`, `accuracy_score` from `sklearn.model_selection` and `sklearn.metrics`
 
 ### 🧰 Libraries & Tools
